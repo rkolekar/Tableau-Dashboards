@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook original-version='18.1' source-build='2019.4.2 (20194.20.0119.2058)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='BenefitsofWorkFromHome' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Benefits of remote work)' inline='true' name='federated.0dkvohj0q15l2b1fokdhq1pwmz5t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Benefits of remote work' name='excel-direct.1291zim18hsn5y1dc3kaa01vdub7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/rahul/Documents/Makeover Monday/Benefits of Remote Work/Benefits of remote work.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1291zim18hsn5y1dc3kaa01vdub7' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B7:no:A1:B7:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Percentage' ordinal='0' />
+            <column datatype='string' name='Benefit of remote work' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Benefit of remote work</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Benefit of remote work]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Benefit of remote work</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B7:no:A1:B7:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Benefits' datatype='string' name='[Benefit of remote work]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Ability to have a flexible schedule&quot;' value='Flexible schedule' />
+          <alias key='&quot;Ability to spend time with family&quot;' value='Spending time with family' />
+          <alias key='&quot;Ability to work from home&quot;' value='Working from home' />
+          <alias key='&quot;Flexibility to work from any location&quot;' value='Working from any location' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/rahul/Documents/Makeover Monday/Benefits of Remote Work/Sheet1 (Benefits of remote work).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2020 03:24:06 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Sheet1 (Benefits of remote work)' increment-value='%null%' refresh-type='create' rows-inserted='6' timestamp-start='2020-08-15 15:24:06.560' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Percentage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Benefit of remote work</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Benefit of remote work]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Benefit of remote work</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.484195' measure-ordering='alphabetic' measure-percentage='0.515805' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 3 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Benefits of remote work)' name='federated.0dkvohj0q15l2b1fokdhq1pwmz5t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dkvohj0q15l2b1fokdhq1pwmz5t'>
+            <column caption='Benefits' datatype='string' name='[Benefit of remote work]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Ability to have a flexible schedule&quot;' value='Flexible schedule' />
+                <alias key='&quot;Ability to spend time with family&quot;' value='Spending time with family' />
+                <alias key='&quot;Ability to work from home&quot;' value='Working from home' />
+                <alias key='&quot;Flexibility to work from any location&quot;' value='Working from any location' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Percentage]' role='measure' type='quantitative' />
+            <column-instance column='[Benefit of remote work]' derivation='None' name='[none:Benefit of remote work:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Percentage]' derivation='Sum' name='[sum:Percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[sum:Percentage:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[sum:Percentage:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[sum:Percentage:qk]' scope='cols' value='false' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]' value='93' />
+            <format attr='text-format' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[sum:Percentage:qk]' value='n#,##0&quot;%&quot;;-#,##0&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]' value='124' />
+            <format attr='background-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[sum:Percentage:qk]' value='n#,##0&quot;%&quot;;-#,##0&quot;%&quot;' />
+            <format attr='font-weight' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]' value='bold' />
+            <format attr='color' field='[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]' value='#e15759' />
+            <format attr='color' scope='cols' value='#e15759' />
+            <format attr='font-weight' scope='cols' value='normal' />
+            <format attr='color' scope='rows' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='background-color' data-class='total' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='14'>&lt;[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[sum:Percentage:qk]&gt; </run>
+                <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'>said </run>
+                <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='14'>&lt;[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]&gt; </run>
+                <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'>was a benefit for them in WFH.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#e15759' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d06a68' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]</rows>
+        <cols>[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[sum:Percentage:qk]</cols>
+      </table>
+      <simple-id uuid='{780C777C-A019-49B4-A05A-7AA2B8A6B4AC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='17' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='8' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' type='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' is-centered='0' param='/Users/rahul/Desktop/Jun20_17_1202438065.jpg' type='bitmap' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='50250' id='5' name='Sheet 3 (3)' show-title='false' w='54400' x='2900' y='35125' />
+        <zone forceUpdate='true' h='6250' id='9' type='text' w='42200' x='28000' y='2375'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#c94d4f' fontsize='22'>Benefits of Work From Home</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='8750' id='10' type='text' w='55200' x='2300' y='12125'>
+          <formatted-text>
+            <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='18'>98%</run>
+            <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book'>Æ </run>
+            <run fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'>of people would like to have the option to work remotely for the rest of their careers.</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='15500' id='11' type='text' w='71200' x='5600' y='19625'>
+          <formatted-text>
+            <run fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'>Research has found that typical employer can save about </run>
+            <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='18'>$11,000</run>
+            <run fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'> per year for every person who works remotely half of the time.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text />
+            </title>
+          </layout-options>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='14' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-centered='0' is-fixed='true' param='/Users/rahul/Desktop/Jun20_17_1202438065.jpg' type='bitmap' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='6250' id='9' type='text' w='42200' x='28000' y='2375'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#c94d4f' fontsize='22'>Benefits of Work From Home</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8750' id='10' type='text' w='55200' x='2300' y='12125'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='18'>98%</run>
+                    <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book'>Æ </run>
+                    <run fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'>of people would like to have the option to work remotely for the rest of their careers.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='15500' id='11' type='text' w='71200' x='5600' y='19625'>
+                  <formatted-text>
+                    <run fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'>Research has found that typical employer can save about </run>
+                    <run bold='true' fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='18'>$11,000</run>
+                    <run fontcolor='#c94d4f' fontname='Benton Sans Book' fontsize='12'> per year for every person who works remotely half of the time.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50250' id='5' is-fixed='true' name='Sheet 3 (3)' show-title='false' w='54400' x='2900' y='35125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{73C8126E-69CC-46CC-8C74-D7FAC49BA2A5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 3 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0dkvohj0q15l2b1fokdhq1pwmz5t].[none:Benefit of remote work:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D3F51D46-AF5F-436E-AC17-79B13268BDE4}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 3 (3)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CF7A0079-C562-4F04-9715-22B7D1B67769}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3 (3)' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
